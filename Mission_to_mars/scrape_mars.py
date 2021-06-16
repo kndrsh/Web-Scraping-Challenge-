@@ -125,4 +125,8 @@ def scrape():
         "fact_table":fact_table,
         "hemisphere_images":hemisphere_image_urls
     }
+    
+  # Close the browser after scraping
+    browser.quit()
+    return mars_dict    
   
