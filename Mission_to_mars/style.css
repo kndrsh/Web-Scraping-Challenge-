@@ -1,51 +1,60 @@
-body {
-    background: #dddcdc;
-  }
-  
-  h1 {
+* Main Header */
+.h1, h1 {
+    font-family: "Georgia", Times, serif;
+    color: #e67e00;
     font-size: 80px;
-  }
-  
-  h3 {
-    font-size: 30px;
-  }
-  
- 
-  
-  /* Styling the header, giving it a height, a background color, and some top padding */
-  .head {
-    height: 200px;
-    padding-top: 20px;
-    background: #8b4d4d;
-  }
-  
-  /* Centering our h1 tag inside our header, giving it a little padding, removing its margin */
-  .head title {
-    padding: 60px;
-    margin: 0;
-    color: rgb(129, 4, 245);
-    background-color: cornsilk;
+}
+/* Latest Mars News, Featured Mars Image, Mars Facts, Mars Hemispheres */
+h2 {
+    font-family: "Georgia", Times, serif;
+    font-weight: bold;
+}
+/* Latest Mars News Title */
+h4 {
+    font-family: "Georgia", Times, serif;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+/* Latest Mars News Paragraph */
+p {
+    font-family: "Georgia", Times, serif;
+    margin-bottom: 30px; 
+}
+/* Featured Image Column */
+.col-lg-7,.col-md-12 {
+    padding-bottom: 20px;
+}
+/* Hemispheres Columns */
+.col-lg-3 {
+    padding: 10px;
+}
+/* Title below Hemispheres Images */
+.col-lg-3 p {
+    font-family: "Georgia", Times, serif;
+    font-size: 15px;
     text-align: center;
-  }
-  
-  
-  
-  /* Adding media queries to show the drop-down, and hide the navbar when the screen is smaller than 480 pixels */
-  @media (max-width: 480px) {
-    .navbar li {
-      padding: 10px;
-    }
-  
-    .post {
-      margin-right: 30px;
-      margin-left: 30px;
-    }
-  
-    .navbar ul {
-      visibility: hidden;
-    }
-  
-    #nav-select {
-      visibility: visible;
-    }
-  }
+    text-decoration: underline;
+}
+
+.select:hover {
+    border-style: solid;
+    border-color: #e67e00;
+    border-width: thick;
+}
+
+table {
+    table-layout: inherit;
+    width: 100%;
+    border: 1px solid #e67e00;
+}
+
+th {
+    text-align: center;
+}
+
+td {
+    border: 1px solid #e67e00;
+    overflow: hidden;
+    white-space: nowrap;
+    text-align: center;
+}
